@@ -45,7 +45,7 @@ Note, `getEdge` and `createEdge` return an EdgeObject but `getEdges` returns an 
 
 Inside the same NestJS server there should be a handler that takes care of processing the events sent to the RabbitMQ queue.
 The handler should:
-    - Console logs the following string: “New channel between [node1_alias]-[node2_alias] with a capacity of [capacity] has been created.”
-    - Update the aliases and save them in the database.
-        - node1_alias = “[node1_alias]-updated”
-        - node2_alias = “[node2_alias]-updated”
+- Console logs the following string: “New channel between [node1_alias]-[node2_alias] with a capacity of [capacity] has been created.”
+- Update the aliases and save them in the database.
+    - node1_alias = “[node1_alias]-updated”
+    - node2_alias = “[node2_alias]-updated”
